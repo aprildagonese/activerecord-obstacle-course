@@ -283,7 +283,7 @@ describe 'ActiveRecord Obstacle Course' do
     expect(names).to eq(expected_result)
   end
 
-  xit '15. gets all item names associated with all orders' do
+  it '15. gets all item names associated with all orders' do
     expected_result = [
       'Thing 4', 'Thing 7', 'Thing 2', 'Thing 5', # order 3
       'Thing 5', 'Thing 2', 'Thing 10', 'Thing 3', # order 11
@@ -334,7 +334,7 @@ describe 'ActiveRecord Obstacle Course' do
 
 
 
-  it '16. returns the names of users who ordered one specific item' do
+  xit '16. returns the names of users who ordered one specific item' do
     expected_result = [@user_2.name, @user_3.name]
 
     # ----------------------- Using Raw SQL-----------------------
@@ -350,7 +350,7 @@ describe 'ActiveRecord Obstacle Course' do
     # ------------------------------------------------------------
 
     # ------------------ Using ActiveRecord ----------------------
-    users = 
+    users =
     # ------------------------------------------------------------
 
     # Expectation
