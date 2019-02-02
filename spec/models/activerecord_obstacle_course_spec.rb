@@ -262,6 +262,7 @@ describe 'ActiveRecord Obstacle Course' do
 
     # ------------------ Using ActiveRecord ----------------------
     grouped_items = @order_3.items.group(:name)
+    grouped_items = @order_3.items.order(:name)
     # ------------------------------------------------------------
 
     # Expectation
