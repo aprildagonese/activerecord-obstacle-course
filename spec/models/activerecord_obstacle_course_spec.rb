@@ -693,7 +693,8 @@ describe 'ActiveRecord Obstacle Course' do
     Bullet.start_request
 
     # ------------------------------------------------------
-    orders = Order.all # Edit only this line
+    # orders = Order.all
+    orders = Item.joins(:order_items).distinct.pluck(:name)
     # ------------------------------------------------------
 
     # Do not edit below this line
