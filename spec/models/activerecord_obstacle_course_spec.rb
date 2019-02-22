@@ -694,7 +694,7 @@ describe 'ActiveRecord Obstacle Course' do
 
     # ------------------------------------------------------
     # orders = Order.all
-    orders = Item.joins(:order_items).distinct.pluck(:name)
+    orders = Order.all.includes(:items)
     # ------------------------------------------------------
 
     # Do not edit below this line

@@ -3,11 +3,6 @@ require 'factory_bot_rails'
 include FactoryBot::Syntax::Methods
 
 OrderItem.destroy_all
-Order.destroy_all
-Item.destroy_all
-User.destroy_all
-
-# # DO NOT CHANGE THE ORDER OF THIS DATA TO MAKE TESTS PASS
 @user_1 = create(:user, name: 'Megan')
 @user_2 = create(:user, name: 'Ian')
 @user_3 = create(:user, name: 'Sal')
